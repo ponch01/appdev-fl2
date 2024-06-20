@@ -9,66 +9,328 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
- 
-
-    <section>
-      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed w-full z-20">
-
-
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <img src="./images/OIP-removebg-preview.png" class="h-8"/>
-          <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a href="./index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Return</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-       </section>
-
-   <!-- component -->
-   <section class="flex flex-row flex-wrap mx-auto pt-20">
-
-      <div class="max-w-screen-lg mx-auto">
-    <main class="mt-10">
-
-      <div class="mb-4 md:mb-0 w-full mx-auto relative">
-        <div class="px-4 lg:px-0">
-          <h2 class="text-4xl font-semibold text-gray-800 leading-tight">
-            Top 10 Augmented Reality Trends in 2024
-          </h2>
-          <br>
-        </div>
-
-        <img src="./images/AR.jpg"/>
-      </div>
-
-      <div class="flex flex-col lg:flex-row lg:space-x-12">
-
-        <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
-          <p class="pb-6">Augmented Reality (AR) is on the rise, with exciting developments shaping its future in 2024. One major trend is AR-based gaming, which is expanding thanks to advancements in technology that create a more immersive and interactive experience for players. This is not just about improving existing games, but also about opening doors to entirely new genres and gameplay possibilities.
-            Another significant trend is the rise of wearable AR devices. Devices like the Vision Pro and Quest 3 are bringing AR to the forefront with features that provide a crystal-clear view and allow for more natural interactions with the AR world. These advancements are making AR more accessible to both consumers and businesses.
-            In education, AR is transforming how we learn. Easy-to-use platforms are empowering teachers and students to create and interact with AR projects, making learning more engaging and interactive. This democratization of content creation is leading to a wider range of educational materials that are both informative and fun.
-            Retail is also embracing AR at an increasing rate. Retailers are using AR to offer enhanced shopping experiences, allowing customers to visualize products in their own homes or try on clothes virtually. This technology is making shopping more interactive and personalized, both online and in physical stores.
-            </p>
-
-          
-
-        </div>
-      </div>
-    </main>
-   </section>
     
-<!--footer  -->
-<footer class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 p-4" >
+<!----NAV BAR-->
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed w-full">
+
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <img src="./images/OIP-removebg-preview.png" class="h-8"/>
+    <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="./index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Return</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ </section>
+
+<section class="flex flex-row flex-wrap mx-auto">
+    <div
+    class="transition-all duration-150 flex w-full px-4 py-6 md:w-1/2 lg:w-1/3"
+  >
+    <div
+      class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl"
+    >
+      <div class="md:flex-shrink-0">
+        <img
+          src="./images/retail.jpg"
+          alt="Blog Cover"
+          class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+        />
+      </div>
+   
+      <hr class="border-gray-300" />
+      <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+          <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+            Top 5 Augmented Reality Use Cases in Retail
+          </h2>
+      </div>
+      <hr class="border-gray-300" />
+      <p
+        class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700"
+      >
+      AR enhances retail with virtual try-ons, interactive displays, immersive in-store experiences, navigation, and omnichannel integration for engaging and convenient shopping.
+      </p>
+      <hr class="border-gray-300" />
+      <section class="px-4 py-2 mt-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center flex-1">
+            <a href="./retail.html">
+              <button
+            class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+            </a>
+          
+        </div>
+      </section>
+    </div>
+  </div> 
+
+  <div
+    class="transition-all duration-150 flex w-full px-4 py-6 md:w-1/2 lg:w-1/3"
+  >
+    <div
+      class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl"
+    >
+      <div class="md:flex-shrink-0">
+        <img
+          src="./images/eye.jpg"
+          alt="Blog Cover"
+          class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+        />
+      </div>
+   
+      <hr class="border-gray-300" />
+      <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+          <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+            New Technology Tackles Privacy Concerns in Augmented Reality
+          </h2>
+      </div>
+      <hr class="border-gray-300" />
+      <p
+        class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700"
+      >
+      "PrivacyAR" tackles AR privacy concerns with eye-tracking, directional mics, and spatial awareness to blur bystanders, encouraging wider AR adoption.
+    </p>
+      <hr class="border-gray-300" />
+      <section class="px-4 py-2 mt-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center flex-1">
+            <a href="./reality.html">
+              <button
+            class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+            </a>
+        </div>
+      </section>
+    </div>
+  </div> 
+
+  <div
+    class="transition-all duration-150 flex w-full px-4 py-6 md:w-1/2 lg:w-1/3"
+  >
+    <div
+      class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl"
+    >
+      <div class="md:flex-shrink-0">
+        <img
+          src="./images/learnig-vr.avif"
+          alt="Blog Cover"
+          class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+        />
+      </div>
+   
+      <hr class="border-gray-300" />
+      <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+          <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+            Augmented Reality in Education: Transforming Learning
+          </h2>
+      </div>
+      <hr class="border-gray-300" />
+      <p
+        class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700"
+      >
+      AR revolutionizes education with interactive content creation, enhancing engagement. Challenges include tech barriers, teacher training, costs, and integration, crucial for unlocking AR's full potential.
+    </p>
+      <hr class="border-gray-300" />
+      <section class="px-4 py-2 mt-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center flex-1">
+            <a href="./education.html">
+              <button
+            class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+            </a>
+        </div>
+      </section>
+    </div>
+  </div> 
+
+  <div
+    class="transition-all duration-150 flex w-full px-4 py-6 md:w-1/2 lg:w-1/3"
+  >
+    <div
+      class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl"
+    >
+      <div class="md:flex-shrink-0">
+        <img
+          src="./images/vr-for-medical.jpg"
+          alt="Blog Cover"
+          class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+        />
+      </div>
+   
+      <hr class="border-gray-300" />
+      <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+          <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+            Augmented Reality Revolutionizes Medical Education
+          </h2>
+      </div>
+      <hr class="border-gray-300" />
+      <p
+        class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700"
+      >
+      AR revolutionizes medical education by enhancing anatomical understanding, aiding surgical planning, and offering immersive learning experiences for medical professionals' excellence.
+    </p>
+      <hr class="border-gray-300" />
+      <section class="px-4 py-2 mt-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center flex-1">
+            <a href="./medical.html">
+              <button
+            class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+            </a>
+        </div>
+      </section>
+    </div>
+  </div> 
+
+  <div
+    class="transition-all duration-150 flex w-full px-4 py-6 md:w-1/2 lg:w-1/3"
+  >
+    <div
+      class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl"
+    >
+      <div class="md:flex-shrink-0">
+        <img
+          src="./images/ARVRBanner.png"
+          alt="Blog Cover"
+          class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+        />
+      </div>
+   
+      <hr class="border-gray-300" />
+      <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+          <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+            The Role of AR in Spatial Commerce: Transforming E-Commerce
+          </h2>
+      </div>
+      <hr class="border-gray-300" />
+      <p
+        class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700"
+      >
+      AR revolutionizes e-commerce with "spatial commerce," offering 3D product visualization and virtual fitting solutions for immersive, satisfying shopping experiences.
+    </p>
+      <hr class="border-gray-300" />
+      <section class="px-4 py-2 mt-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center flex-1">
+            <a href="./commerce.html">
+              <button
+            class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+            </a>
+        </div>
+      </section>
+    </div>
+  </div> 
+
+  <div
+    class="transition-all duration-150 flex w-full px-4 py-6 md:w-1/2 lg:w-1/3"
+  >
+    <div
+      class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl"
+    >
+      <div class="md:flex-shrink-0">
+        <img
+          src="./images/chllnge.jpg"
+          alt="Blog Cover"
+          class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+        />
+      </div>
+   
+      <hr class="border-gray-300" />
+      <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+          <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+            Social VR and VR Entertainment: Trends and Challenges
+          </h2>
+      </div>
+      <hr class="border-gray-300" />
+      <p
+        class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700"
+      >
+      AR and VR revolutionize entertainment with immersive experiences like social VR and interactive gaming. Safety concerns and privacy issues need addressing for widespread adoption.
+    </p>
+      <hr class="border-gray-300" />
+      <section class="px-4 py-2 mt-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center flex-1">
+            <a href="./vr.html">
+              <button
+              class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              data-ripple-light="true">
+                Read More
+              </button>
+            </a>
+        </div>
+      </section>
+    </div>
+  </div> 
+
+  
+</section>  
+
+<section class="pb-3">
+<div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+    <div class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+      <svg class="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block" viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
+        <path d="M50 0H100L50 100H0L50 0Z"></path>
+      </svg>
+      <img
+        class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+        src="./images/exp.jpg"
+        alt=""
+      />
+    </div>
+    <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+      <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+        <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            Augmented Reality in Retail: Enhancing Customer Experience</h2>
+        <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+            AR redefines retail with interactive experiences like virtual try-ons and product displays, enhancing engagement and confidence in purchases.
+        </p>
+        <div class="flex items-center">
+          <a href="./enhancing.html">
+            <button
+            class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>  
+          </a>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---Footer-->
+<footer class="bg-gray-700 text-white p-4" >
   <div class="container mx-auto flex items-center justify-center">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
         <path fill="#3f51b5" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M29.368,24H26v12h-5V24h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H30v4h-2.287 C26.104,16,26,16.6,26,17.723V20h4L29.368,24z"></path>
@@ -82,14 +344,13 @@
   </div>
   <br>
   <div>
-    <p class="text-center text-white">© 2024 Pecson, Jeilah Marylein C. All rights reserved.</p>
+    <p class="text-center">© 2024 Pecson, Jeilah Marylein C. All rights reserved.</p>
   </div>
 </footer>
-<!-- </footer> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+<script type="module" src="script.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
   </body>
-        <script type="module" src="script.js"></script> 
-     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </html>
